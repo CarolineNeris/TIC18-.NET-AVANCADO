@@ -16,7 +16,7 @@ public class ContaBancaria
         {
             throw new ValorInvalidoException( valorSaque);
         }
-        if (valorSaque>saldo)
+        else if (valorSaque>saldo)
         {
             throw new SaldoInsuficienteException(saldo);
         }
