@@ -1,6 +1,6 @@
 ﻿using exercicio04.ServicoFabria;
 using exercicio04.Manufatura;
-using exercicio04.IServico;
+
 class Program
 {
     static void Main(string[] args)
@@ -8,6 +8,8 @@ class Program
         
         ServicoFabrica<Manufatura> fabrica = new ServicoFabrica<Manufatura>();
         Manufatura meuManufaturado = fabrica.NovaInstancia();
+        //eu poderia fazer isso?Manufatura Meu manufaturado = Manufatura.executar
+        
         meuManufaturado.Executar();
     }
 }
